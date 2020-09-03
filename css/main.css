@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather');
+
+
+.pageWrapper{
+    /* border: 1px solid black; */
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.centerName{
+    /* border: 1px solid blue; */
+    font-family: 'Merriweather';
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 5px solid black;
+}
