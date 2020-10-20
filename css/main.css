@@ -44,18 +44,49 @@ ol{
 
 }
 
+ul{
+    font-family: 'Quicksand', sans-serif;
+    list-style: none;
+
+}
+
 li{
 
     line-height: 150%;
+
+}
+.halfSize{
+
+    width: 50%;
+
+}
+
+.imgFloatLeft{
+
+    float: left;
+    padding: 10px;
+
+}
+
+.imgFloatRight{
+
+    float: right;
+    padding: 10px;
 
 }
 
 .header{
 
     font-family: 'Merriweather', serif;
+    font-size: 48px;
 
 }
 
+.myName{
+
+    font-size: 36px;
+
+}
 .pageWrapper{
     background-color: white;
     margin: 0 auto;
@@ -150,7 +181,7 @@ a:visited.noDecor{
     grid-area: main;
 
     padding: 0px 30px 0px 30px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 125%;
     
 }
@@ -183,6 +214,13 @@ a:visited.noDecor{
     height: 4em;
     width: 4em;
     margin: 1em;
+
+}
+
+.bio{
+
+    font-size: 18px;
+    font-style: italic;
 
 }
 
