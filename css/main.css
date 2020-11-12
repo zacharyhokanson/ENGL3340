@@ -3,9 +3,11 @@
 
 body{
 
-    background-color: white;
+    background-image: url(../assets/images/pexels-tirachard-kumtanom-450055.jpg);
     /* margin: 0 30px 0 30px; */
     text-align: justify;
+    margin: 0 auto;
+    
 
 }
 
@@ -64,14 +66,14 @@ li{
 .imgFloatLeft{
 
     float: left;
-    padding: 10px;
+    padding: 25px;
 
 }
 
 .imgFloatRight{
 
     float: right;
-    padding: 10px;
+    padding: 25px 0px 25px 25px;
 
 }
 
@@ -87,20 +89,31 @@ li{
     font-size: 36px;
 
 }
-.pageWrapper{
+
+/* .hero{
     background-color: white;
     margin: 0 auto;
     min-height: 100vh;
-    max-width: 90vw;
     display: grid;
     justify-content: center;
-    grid-template-columns: 15rem 1fr 15rem;
-    /* grid-template-rows: 10em repeat(3, 1fr) 10em; */
+    grid-template-columns: 1fr 1fr .5fr;
     grid-template-areas: 
-        "header header sidebar"
-        "main main link"
-        "main main link"
-        "main main link"
+        "hero hero hero";
+} */
+
+.pageWrapper{
+    /* background-color: white; */
+    margin: 0 auto;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr .5fr;
+    grid-template-rows: 30em repeat(2, 1fr) 10em;
+    grid-template-areas: 
+        "hero hero hero"
+        "main main sidebar"
+        "main main sidebar"
+        "main main sidebar"
         "footer footer footer";
 
     
@@ -134,7 +147,11 @@ a:visited.noDecor{
 
 }
 
+.flexBetween{
 
+    justify-content: space-between;
+
+}
 
 .flexEnd{
 
@@ -152,13 +169,22 @@ a:visited.noDecor{
 
 }
 .largeFont{
-    font-size: 45px;
+    font-size: 25px;
     text-align: center;
 
 }
 
 .blackBorder{
     /* border: 1px solid black; */
+
+}
+
+.whiteBackground{
+
+    background-color: rgba(255, 255, 255, .5);
+    margin-bottom: 2em;
+    align-self: flex-end;
+
 
 }
 
@@ -171,24 +197,32 @@ a:visited.noDecor{
 }
 .grid1{
     /* background-color: antiquewhite; */
-    grid-area: header;
+    grid-area: hero;
     font-family: 'Merriweather', serif;
+    background-image: url(../assets/images/pexels-rene-asmussen-4451299.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+    
 
 }
 
 .main{
-    /* background-color: pink; */
+    background-color: #ffffff;
     grid-area: main;
 
-    padding: 0px 30px 0px 30px;
+    padding: 0px 30px 0px 0px;
     font-size: 20px;
     line-height: 125%;
+    margin-left: 3em;
+
     
 }
 
 .grid3{
-    /* background-color: aqua; */
+    background-color: #ffffff;
     grid-area: sidebar;
+    margin-right: 3em;
     
 }
 
@@ -200,7 +234,7 @@ a:visited.noDecor{
 
 .grid5{
 
-    /* background-color: azure; */
+    background-color: aqua;
     grid-area: link;
 
 }
@@ -236,13 +270,23 @@ a:visited.noDecor{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
-            "header"
+            "hero"
             "sidebar"
             "main"
-            "link"
-            "footer"
-            
-            ;
+            "footer";
+    }
+
+    .main{
+        /* background-color: pink; */
+        grid-area: main;
+    
+        padding: 0;
+        font-size: 20px;
+        line-height: 125%;
+        margin: 1em;
+    
+        
+    }
 
         /* grid-row-gap: 30px;
         grid-column-gap: 30px; */
@@ -250,8 +294,6 @@ a:visited.noDecor{
     
     }
 
-
-  }
 
   /* font-family: 'Merriweather', serif;
 font-family: 'Montserrat', sans-serif;
