@@ -211,7 +211,7 @@ a:visited.noDecor{
     background-color: #ffffff;
     grid-area: main;
 
-    padding: 0px 30px 0px 0px;
+    padding: 0px 30px 0px 30px;
     font-size: 20px;
     line-height: 125%;
     margin-left: 3em;
